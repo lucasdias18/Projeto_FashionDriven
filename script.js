@@ -10,33 +10,31 @@ function carregarSite() {
         const pedidos_camisas = document.querySelector('footer div')
         pedidos_camisas.innerHTML = ``
         for (i = 0; i < 10; i++) {
-            pedidos_camisas.innerHTML += `<figure onclick='confirm("Deseja fazer uma encomenda idêntica à camisa selecionada?")'>
+            pedidos_camisas.innerHTML += `<figure onclick='encomendaIdentica(this)'>
                                             <img src="${resposta.data[i].image}" />
                                             <figcaption><b>Criador: </b>${resposta.data[i].owner}</figcaption>
                                         </figure>`
-
-            // console.log(pedidos_camisas.innerHTML)
-            // if (confirm("Deseja fazer uma encomenda idêntica à camisa selecionada?") === true) {
-            //     let encomenda = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", resposta[1])
-            //     encomenda.then(pedidoRealizado)
-            //     encomenda.catch(falhaPedido)
-
-            //     function pedidoRealizado(resposta) {
-            //         const statusResposta = resposta.status;
-            //         console.log(statusResposta);
-            //     }
-
-            //     function falhaPedido(erro) {
-            //         console.log("Status code: " + erro.response.status);
-            //         console.log("Mensagem de erro: " + erro.response.data);
-            //         alert("Ops, não conseguimos processar sua encomenda")
-            //     }
-            
         }
+    }
+
+    function Erro(erro) {
+        alert('Deu ruim.')
     }
 }
 
 setInterval(carregarSite,1000)
+
+function encomendaIdentica(camisa) {
+    // confirm("Deseja fazer uma encomenda idêntica à camisa selecionada?")
+
+    if (confirm("Deseja fazer uma encomenda idêntica à camisa selecionada?") === true ) {
+        alert('Ok!')
+    }
+
+    else {
+        alert('Não ok!')
+    }
+}
 
  function Erro(erro) {
     console.log("Status code: " + erro.response.status);
