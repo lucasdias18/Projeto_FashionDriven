@@ -95,6 +95,11 @@ function ativarBotao() {
         const botao = document.querySelector('.finalizar-pedido')
         botao.children[1].classList.add('ativado')
     }
+
+    if (link === "") {
+        const botao = document.querySelector('.finalizar-pedido')
+        botao.children[1].classList.remove('ativado')
+    }
 }
 
 
