@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #FCFCFC;
+}
+
+header {
+    height: 89px;
+    background-color: #404EED;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+main {
+    display: flex;
+    height: 785px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #232323;
+}
+
+main nav {
+    width: 51%;
+    padding-left: 123px;
+    margin-top: 38px;
+}
+
+nav h1 {
+    margin-bottom: 8px;
+}
+
+.ilustração {
+    width: 49%;
+    background-color: #404EED;
+    border: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    gap: 45px;
+}
+
+figure {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+figure .modelo, figure .gola, figure .tecido {
+    width: 100px;
+    height: 100px;
+    background-color: #F2F2F2;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .finalizar-pedido {
+    flex-direction: column;
+}
+
+.finalizar-pedido input {
+    width: 396px;
+    height: 40px;
+    border: hidden;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #818181;
+    padding-left: 15px;
+}
+
+.finalizar-pedido button {
+    width: 398px;
+    height: 40px;
+    border: hidden;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.finalizar-pedido .ativado {
+    background-color: #404EED;
+}
+
+footer {
+    height: 342px;
+    background-color: #F2F2F2;
+    padding-top: 31px;
+    padding-left: 8%;
+    padding-right: 12%;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+footer div {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+}
+
+footer figure {
+    height: 236px;
+    min-width: 202px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #232323;
+}
+
+/* footer figure > div {
+    height: 236px;
+    width: 202px;
+    margin-bottom: 8px;
+    display: flex;
+
+} */
+
+footer figure > img {
+    width: 180px;
+    height: 180px;
+}
+
+b {
+    font-weight: 700;
+}
+
+figure .selecionado {
+    border: 3px solid #404EED;
+}

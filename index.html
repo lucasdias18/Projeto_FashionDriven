@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <title>Fashion Driven</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/Logo.png" />
+        </header>
+        <main>
+            <nav>
+                <h1>Escolha o modelo</h1>
+                <div>
+                    <figure>
+                        <div class="modelo" onclick="selecionarModelo(this)"><img src="./img/tshirt.png" /></div>
+                        <figcaption>T-Shirt</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="modelo" onclick="selecionarModelo(this)"><img src="./img/Camiseta.png" /></div>
+                        <figcaption>Camiseta</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="modelo" onclick="selecionarModelo(this)"><img src="./img/Mangalonga.png" /></div>
+                        <figcaption>Manga longa</figcaption>
+                    </figure>
+                </div>
+                <h1>Escolha a gola</h1>
+                <div>
+                    <figure>
+                        <div class="gola" onclick="selecionarGola(this)"><img src="./img/GolaV.png" /></div>
+                        <figcaption>Gola V</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="gola" onclick="selecionarGola(this)"><img src="./img/GolaRedonda.png" /></div>
+                        <figcaption>Gola Redonda</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="gola" onclick="selecionarGola(this)"><img src="./img/GolaPolo.png" /></div>
+                        <figcaption>Gola Polo</figcaption>
+                    </figure>
+                </div>
+                <h1>Escolha o tecido</h1>
+                <div>
+                    <figure>
+                        <div class="tecido" onclick="selecionarTecido(this)"><img src="./img/Seda.png" /></div>
+                        <figcaption>Seda</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="tecido" onclick="selecionarTecido(this)"><img src="./img/Algodão.png" /></div>
+                        <figcaption>Algodão</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="tecido" onclick="selecionarTecido(this)"><img src="./img/Poliester.png" /></div>
+                        <figcaption>Poliester</figcaption>
+                    </figure>
+                </div>
+                <h1>Imagem de referência</h1>
+                <div class="finalizar-pedido">
+                    <input  placeholder="Insira o link">
+                    <button>Confirmar pedido</button>
+                </div>
+            </nav>
+            <div class="ilustração">
+                <img src="./img/ilustração.png" />
+            </div>
+        </main>
+        <footer>
+            <h1>Últimos pedidos</h1>
+            <div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
