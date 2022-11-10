@@ -45,6 +45,10 @@ nav h1 {
     align-items: center;
 }
 
+.ilustração img {
+    max-width: 100%;
+}
+
 nav div {
     display: flex;
     gap: 45px;
@@ -102,6 +106,7 @@ nav .finalizar-pedido {
 
 .finalizar-pedido .ativado {
     background-color: #404EED;
+    cursor: pointer;
 }
 
 footer {
@@ -139,17 +144,10 @@ footer figure {
     color: #232323;
 }
 
-/* footer figure > div {
-    height: 236px;
-    width: 202px;
-    margin-bottom: 8px;
-    display: flex;
-
-} */
-
 footer figure > img {
     width: 180px;
     height: 180px;
+    border-radius: 10px;
 }
 
 b {
@@ -158,4 +156,8 @@ b {
 
 figure .selecionado {
     border: 3px solid #404EED;
+}
+
+footer figure > .dados {
+    display: none;
 }
